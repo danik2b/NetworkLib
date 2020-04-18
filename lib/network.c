@@ -3,27 +3,13 @@
 
 /* Create Server and Client sockets. */
 
-int server_socket()
+int create_socket()
 {
   int sock = socket(AF_INET, SOCK_STREAM, 0);
 
   if(sock == -1)
   {
     perror("Server socket was not created!");
-    exit(1);
-  }
-
-  return sock;
-}
-
-int client_socket()
-{
-
-  int sock = socket(AF_INET,SOCK_STREAM,0);
-
-  if(sock == -1)
-  {
-    perror("Client socket was not created!");
     exit(1);
   }
 
