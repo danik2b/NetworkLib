@@ -4,7 +4,7 @@
 
 void main(int argc, char **argv)
 {
-  int socket = client_socket(); //create a socket.
+  int socket = create_socket(); //create a socket.
 
   if(argc < 3 || argc > 3)
   {
