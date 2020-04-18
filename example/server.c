@@ -10,7 +10,7 @@
 void main(int argc, char **argv)
 {
 
-  int socket = server_socket(); //initialize the socket.
+  int socket = create_socket(); //initialize the socket.
 
   if(argc < 3 || argc > 3)
   {
