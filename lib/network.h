@@ -19,9 +19,7 @@ struct sockaddr_in server, client;
 
 /* Create Server and Client sockets. */
 
-int server_socket();
-
-int client_socket();
+int create_socket();
 
 /* Server Functions */
 
